@@ -6,6 +6,6 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - .:/app
+      - .:/usr/local/app  # This works on macOS, Windows, and Linux
     environment:
       - JUPYTER_ENABLE_LAB=yes
